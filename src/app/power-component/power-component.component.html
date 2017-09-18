@@ -1,0 +1,12 @@
+<h1>Power Level Calculator</h1>
+<form (submit) = "onSubmit()">
+  Select a power Level: <select name="power" [(ngModel)]="power">
+    <option *ngFor="let num of powerNum" value="{{ num }}">{{ num }}</option>
+  </select>
+</form>
+<app-human-component [power] = "power"></app-human-component>
+<app-saiyan-component [power] = "power"></app-saiyan-component>
+<app-super-saiyan-component [power] = "power"></app-super-saiyan-component>
+<app-super-saiyan-two-component [power] = "power"></app-super-saiyan-two-component>
+<app-super-saiyan-three-component [power] = "power"></app-super-saiyan-three-component>
+<app-super-saiyan-four-component [power] = "power"></app-super-saiyan-four-component>

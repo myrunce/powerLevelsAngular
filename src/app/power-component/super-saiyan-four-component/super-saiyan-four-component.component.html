@@ -1,0 +1,6 @@
+<div id="power">
+  <h3>Super Saiyan Four Power Level: <span *ngIf = "power != NaN">{{power * 500}}</span></h3>
+  <h4 *ngIf = "power >= 19 && power <= 50">"Over 9000!"</h4>
+  <h4 *ngIf = "power >= 50 && power != 100">"SuperLative!"</h4>
+  <h4 *ngIf = "power == 100">"The One"</h4>
+</div>
